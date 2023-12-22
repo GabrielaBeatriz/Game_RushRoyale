@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
          pathIndex++;
          if (pathIndex == LevelMagaer.main.path.Length)
          {
+            EnemySpawner.onEnemyDestroy.Invoke();
             Destroy(gameObject);
             return;
          }
@@ -38,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
 
    private void FixedUpdate()
    {
-      Vector2 direction = target.position - transform.position.normalized;
+      Vector2 direction = (target.position - transform.position).normalized;
 
       rb.velocity = direction * moveSpeed;
 
