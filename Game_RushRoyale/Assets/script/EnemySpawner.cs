@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
     public static UnityEvent onEnemyDestroy = new UnityEvent();
     
 
-        private int currentWave = 1;
+    private int currentWave = 1;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
@@ -53,6 +53,8 @@ public class EnemySpawner : MonoBehaviour
         {
             EndWave();
         }
+        
+        
     }
     
 
@@ -74,6 +76,7 @@ public class EnemySpawner : MonoBehaviour
     {
         isSpawing = false;
         timeSinceLastSpawn = 0f;
+        currentWave++;
         StartCoroutine(StartWave());
 
     }
