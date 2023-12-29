@@ -1,14 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Serialization;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-   [Header("references")] [SerializeField]
-   private Rigidbody2D rb;
+   [Header("references")] 
+   [SerializeField] private Rigidbody2D rb;
 
-   [Header("atributes")] [SerializeField] private float moveSpeed = 2f;
+   [Header("atributes")]
+   [SerializeField] private float moveSpeed = 2f;
 
    private Transform target;
    private int pathIndex = 0;
@@ -38,7 +40,7 @@ public class EnemyMovement : MonoBehaviour
 
    private void FixedUpdate()
    {
-      Vector2 direction = target.position - transform.position.normalized;
+      Vector2 direction = (target.position - transform.position).normalized;
 
       rb.velocity = direction * moveSpeed;
 
