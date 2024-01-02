@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &526643922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Diante dessa amea\xE7a, os Guardi\xF5es e her\xF3is h\xE1 muito adormecidos,
-    foram chamados de volta \xE0 vida para proteger o reino."
+  m_text: "Diante dessa amea\xE7a, os Guardi\xF5es e her\xF3is h\xE1 muito tempo
+    adormecidos, foram chamados de volta \xE0 vida para proteger o reino."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -390,7 +390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &796326594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Em um mundo distante, reinos m\xE1gios floresciam em harmonia..."
+  m_text: "Em um mundo distante, reinos m\xE1gicos floresciam em harmonia..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -803,6 +803,7 @@ RectTransform:
   - {fileID: 1934249753}
   - {fileID: 526643926}
   - {fileID: 1403961105}
+  - {fileID: 958466311}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,14 +821,84 @@ PlayableDirector:
   m_GameObject: {fileID: 936393684}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
+  m_PlayableAsset: {fileID: 11400000, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: -8058826349356576318, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1403961104}
+  - key: {fileID: -2138527875461214968, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1403961109}
+  - key: {fileID: 4373433050133806702, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1789800951}
+  - key: {fileID: 5114765103922634966, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 796326593}
+  - key: {fileID: -9190928714371209517, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1698725730}
+  - key: {fileID: 3109602726265601357, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1688391824}
+  - key: {fileID: -5854810812206501446, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 1934249750}
+  - key: {fileID: 4775913644886315855, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 526643921}
+  - key: {fileID: 6841805713657702012, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6782802312792269630, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
+    value: {fileID: 958466309}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &958466309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958466311}
+  - component: {fileID: 958466310}
+  m_Layer: 5
+  m_Name: Load
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &958466310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958466309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab48d26711bb23d41adf3eb5b0d4905e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CenaParaCarregar: RushRoyale
+--- !u!224 &958466311
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958466309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 936393688}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1403961104
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +911,6 @@ GameObject:
   - component: {fileID: 1403961108}
   - component: {fileID: 1403961107}
   - component: {fileID: 1403961106}
-  - component: {fileID: 1403961110}
   - component: {fileID: 1403961109}
   m_Layer: 5
   m_Name: tela azul
@@ -848,7 +918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1403961105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -939,42 +1009,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &1403961110
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403961104}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -8058826349356576318, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1403961104}
-  - key: {fileID: -2138527875461214968, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1403961109}
-  - key: {fileID: 4373433050133806702, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1789800951}
-  - key: {fileID: 5114765103922634966, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 796326593}
-  - key: {fileID: -9190928714371209517, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1698725730}
-  - key: {fileID: 3109602726265601357, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1688391824}
-  - key: {fileID: -5854810812206501446, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 1934249750}
-  - key: {fileID: 4775913644886315855, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 526643921}
-  - key: {fileID: 6841805713657702012, guid: 7100ab0e73df895469875efdc16b549d, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References:
-    - d737e70dff6011a4883f4587aa8dde73: {fileID: 1403961104}
 --- !u!1 &1553381869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1688391825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,7 +1269,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
